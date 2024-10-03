@@ -1,0 +1,10 @@
+<mvc:View
+  controllerName="com.ust.northwind.northwind.controller.App"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <App id="app">
+    <pages>
+      <!-- The Master view will be handled through routing -->
+    </pages>
+  </App>
+</mvc:View>

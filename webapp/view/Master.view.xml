@@ -1,0 +1,48 @@
+<mvc:View controllerName="com.ust.northwind.northwind.controller.Master"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+   <App id="app">
+    <Page id="masterPage" title="{i18n>title}">
+        <content>
+        <VBox>
+            <Button text="Click Me"
+                type="Accept"
+                icon="sap-icon://create"
+                press=".onCreate"
+                ariaHasPopup="Dialog"/>
+            <Table id="projectID" items="{products>/results}">
+    
+                <columns>
+                    <Column width="12em">
+                        <Text text="Customer ID" />
+                    </Column>
+                    <Column width="12em">
+                        <Text text="Company Name" />
+                    </Column>
+                    <Column width="12em">
+                        <Text text="Contact Name" />
+                    </Column>
+                    <Column width="12em">
+                        <Text text="Contact Title" />
+                    </Column>
+                    <Column width="12em">
+                        <Text text="Address" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem vAlign="Middle" type="Navigation" press="onListItemPress">
+                        <cells>
+                            <Text text="{products>CustomerID}" />
+                            <Text text="{products>CompanyName}" />
+                            <Text text="{products>ContactName}" />
+                            <Text text="{products>ContactTitle}" />
+                            <Text text="{products>Address}" /> <!-- Ensure correct binding -->
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+            </VBox>
+        </content>
+    </Page>
+    </App>
+</mvc:View>

@@ -1,0 +1,43 @@
+<mvc:View 
+    controllerName="com.ust.northwind.northwind.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m" 
+    displayBlock="true">
+   
+    <Page title="{i18n>title}">
+        <content>
+            <Shell> 
+                <VBox>
+                    <HBox>
+                        <Table items="{products1>/Customers}">
+                            <columns>
+                                <Column>
+                                    <Text text="Customer ID" />
+                                </Column>
+                                <Column>
+                                    <Text text="Customer Name" />
+                                </Column>
+                                <Column>
+                                    <Text text="Contact Title" />
+                                </Column>
+                                <Column>
+                                    <Text text="Address" />
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Text text="{products1>CustomerID}" /> <!-- Customer ID -->
+                                        <Text text="{products1>CompanyName}" /> <!-- Company Name -->
+                                        <Text text="{products1>ContactTitle}" /> <!-- Contact Title -->
+                                        <Text text="{products1>Address}" /> <!-- Address -->
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </HBox>
+                </VBox>
+            </Shell> 
+        </content>
+    </Page>
+</mvc:View>

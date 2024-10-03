@@ -1,0 +1,44 @@
+<mvc:View controllerName="com.ust.northwind.northwind.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <VBox>
+                <Table id="ID" items="{customers>/results}">
+                    <columns>
+                        <Column width="12em">
+                            <Text text="Customer ID"/>
+                        </Column>
+                        <Column width="12em">
+                            <Text text="Customer Name" />
+                        </Column>
+                        <Column width="12em">
+                            <Text text="ContactName" />
+                        </Column>
+                        <Column width="12em">
+                            <Text text="Category ID" />
+                        </Column>
+                         <Column width="12em">
+                            <Text text="Quantity Per Unit" />
+                        </Column>
+                        <Column width="12em">
+                            <Text text="UnitPrice" />
+                        </Column>
+                    </columns>
+                    <items>
+                    <ColumnListItem vAlign="Middle" type="Navigation" press="onListItemPress">
+                        <cells>
+                            <Text text="{customers>CustomerID}" />
+                            <Text text="{customers>CompanyName}" />
+                            <Text text="{customers>ContactName}" />
+                            <Text text="{customers>ContactTitle}" />
+                            <Text text="{customers>Address}" />
+                            <Text text="{customers>City}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
