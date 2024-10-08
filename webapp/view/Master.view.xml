@@ -5,6 +5,7 @@
     <Page id="masterPage" title="{i18n>title}">
         <content>
         <VBox>
+           <ToolbarSpacer />
             <Button text="Click Me"
                 type="Accept"
                 icon="sap-icon://create"
@@ -36,7 +37,7 @@
                             <Text text="{products>CompanyName}" />
                             <Text text="{products>ContactName}" />
                             <Text text="{products>ContactTitle}" />
-                            <Text text="{products>Address}" /> <!-- Ensure correct binding -->
+                            <Text text="{products>Address}" /> 
                         </cells>
                     </ColumnListItem>
                 </items>

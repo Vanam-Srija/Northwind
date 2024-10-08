@@ -1,9 +1,13 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified">
     <Dialog id="idCreateProduct" title="{i18n>createProduct}">
         <content>
-            <Label text="Product ID"/>
+            <Label text="Customer ID"/>
             <Input value="" />
-            <Label text="Product Name"/>
+            <Label text="Company Name"/>
+            <Input value=""/>
+            <Label text="Contact Name"/>
+            <Input value=""/>
+            <Label text="Contact Title"/>
             <Input value=""/>
         </content>
         <beginButton>
